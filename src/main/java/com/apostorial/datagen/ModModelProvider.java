@@ -29,5 +29,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_BREADIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.BREADIUM_STAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.BREADIUM_STAR_FRAGMENT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.BREADIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BREADIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BREADIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BREADIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.BREADIUM_HOE, Models.HANDHELD);
     }
 }
