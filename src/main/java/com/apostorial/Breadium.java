@@ -18,7 +18,7 @@ public class Breadium implements ModInitializer {
 		ModItems.initialize();
 		ModItemGroups.initialize();
 		ModBlocks.initialize();
-		FuelRegistry.INSTANCE.add(ModItems.BREADIUM_STAR, 631138504); // 631,138,504.32 ticks exactly, 31,556,925.216 seconds, 365.24219 days, 1 solar year
+		FuelRegistry.INSTANCE.add(ModItems.BREADIUM_STAR, Integer.MAX_VALUE);
 		LOGGER.info("Hello Fabric world!");
 	}
 }
