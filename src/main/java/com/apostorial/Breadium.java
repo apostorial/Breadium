@@ -1,8 +1,8 @@
-package com.example;
+package com.apostorial;
 
-import com.example.block.ModBlocks;
-import com.example.item.ModItemGroups;
-import com.example.item.ModItems;
+import com.apostorial.block.ModBlocks;
+import com.apostorial.item.ModItemGroups;
+import com.apostorial.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;

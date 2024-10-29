@@ -1,7 +1,7 @@
-package com.example.block.custom;
+package com.apostorial.block.custom;
 
-import com.example.block.ModBlocks;
-import com.example.item.ModItems;
+import com.apostorial.block.ModBlocks;
+import com.apostorial.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
