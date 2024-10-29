@@ -2,6 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
     "F": {
       "item": "breadium:breadium_star_fragment"
     },
@@ -10,9 +13,9 @@
     }
   },
   "pattern": [
-    " F ",
+    "DFD",
     "FSF",
-    " F "
+    "DFD"
   ],
   "result": {
     "count": 1,
