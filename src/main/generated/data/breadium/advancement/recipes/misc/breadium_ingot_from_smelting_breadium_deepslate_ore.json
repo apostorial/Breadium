@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_breadium_deepslate_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "breadium:breadium_deepslate_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:breadium_ingot_from_smelting_breadium_deepslate_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_breadium_deepslate_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:breadium_ingot_from_smelting_breadium_deepslate_ore"
+    ]
+  }
+}

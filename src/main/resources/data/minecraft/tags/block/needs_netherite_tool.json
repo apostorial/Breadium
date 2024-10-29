@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "breadium:breadium_block",
-    "breadium:raw_breadium_block",
-    "breadium:breadium_ore",
-    "breadium:breadium_deepslate_ore"
-  ]
-}

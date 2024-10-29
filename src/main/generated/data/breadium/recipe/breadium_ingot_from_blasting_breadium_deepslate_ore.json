@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 125,
+  "experience": 1.0,
+  "group": "breadium_ingot",
+  "ingredient": {
+    "item": "breadium:breadium_deepslate_ore"
+  },
+  "result": {
+    "id": "breadium:breadium_ingot"
+  }
+}

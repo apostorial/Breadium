@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_breadium_star_fragment": {
+      "conditions": {
+        "items": [
+          {
+            "items": "breadium:breadium_star_fragment"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "breadium:breadium_star"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_breadium_star_fragment"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "breadium:breadium_star"
+    ]
+  }
+}

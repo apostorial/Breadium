@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "layer0": "breadium:block/breadium_block"
-  }
-}

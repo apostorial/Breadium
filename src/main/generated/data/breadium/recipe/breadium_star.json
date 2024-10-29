@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "breadium:breadium_star_fragment"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "pattern": [
+    " F ",
+    "FSF",
+    " F "
+  ],
+  "result": {
+    "count": 1,
+    "id": "breadium:breadium_star"
+  }
+}

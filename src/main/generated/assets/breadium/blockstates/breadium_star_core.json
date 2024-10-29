@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "breadium:block/breadium_star_core"
+    }
+  }
+}

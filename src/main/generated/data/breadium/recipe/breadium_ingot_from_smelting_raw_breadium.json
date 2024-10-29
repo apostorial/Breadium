@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 1.0,
+  "group": "breadium_ingot",
+  "ingredient": {
+    "item": "breadium:raw_breadium"
+  },
+  "result": {
+    "id": "breadium:breadium_ingot"
+  }
+}
