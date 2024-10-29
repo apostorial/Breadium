@@ -3,7 +3,6 @@ package com.apostorial.item;
 import com.apostorial.util.ModTags;
 import com.google.common.base.Suppliers;
 import net.minecraft.block.Block;
-import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.TagKey;
@@ -11,9 +10,7 @@ import net.minecraft.registry.tag.TagKey;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    BREADIUM(ModTags.Blocks.INCORRECT_FOR_BREADIUM_TOOL, 3000, 12.0F, 5.0F, 15, () -> {
-        return Ingredient.ofItems(new ItemConvertible[]{ModItems.BREADIUM_INGOT});
-    });
+    BREADIUM(ModTags.Blocks.INCORRECT_FOR_BREADIUM_TOOL, 3000, 12.0F, 5.0F, 15, () -> Ingredient.ofItems(ModItems.BREADIUM_INGOT));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
@@ -22,7 +19,7 @@ public enum ModToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    private ModToolMaterials(final TagKey<Block> inverseTag, final int itemDurability, final float miningSpeed, final float attackDamage, final int enchantability, final Supplier<Ingredient> repairIngredient) {
+    ModToolMaterials(final TagKey<Block> inverseTag, final int itemDurability, final float miningSpeed, final float attackDamage, final int enchantability, final Supplier<Ingredient> repairIngredient) {
         this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
