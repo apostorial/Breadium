@@ -30,12 +30,58 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_BREADIUM, RecipeCategory.DECORATIONS, ModBlocks.RAW_BREADIUM_BLOCK);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BREADIUM_STAR)
-                .pattern(" F ")
+                .pattern("DFD")
                 .pattern("FSF")
-                .pattern(" F ")
+                .pattern("DFD")
                 .input('F', ModItems.BREADIUM_STAR_FRAGMENT)
                 .input('S', Items.NETHER_STAR)
+                .input('D', Items.DIAMOND)
                 .criterion(hasItem(ModItems.BREADIUM_STAR_FRAGMENT), conditionsFromItem(ModItems.BREADIUM_STAR_FRAGMENT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BREADIUM_SWORD)
+                .pattern("B")
+                .pattern("B")
+                .pattern("S")
+                .input('B', ModItems.BREADIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT), conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BREADIUM_PICKAXE)
+                .pattern("BBB")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('B', ModItems.BREADIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT), conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BREADIUM_SHOVEL)
+                .pattern("B")
+                .pattern("S")
+                .pattern("S")
+                .input('B', ModItems.BREADIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT), conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BREADIUM_AXE)
+                .pattern("BB")
+                .pattern("BS")
+                .pattern(" S")
+                .input('B', ModItems.BREADIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT), conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BREADIUM_HOE)
+                .pattern("BB")
+                .pattern(" S")
+                .pattern(" S")
+                .input('B', ModItems.BREADIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT), conditionsFromItem(ModItems.BREADIUM_INGOT))
                 .offerTo(exporter);
     }
 }
