@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_breadium_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "breadium:breadium_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "breadium:breadium_shovel"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_breadium_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "breadium:breadium_shovel"
+    ]
+  }
+}
