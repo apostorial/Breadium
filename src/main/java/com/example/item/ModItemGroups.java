@@ -18,10 +18,14 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_BREADIUM);
                         entries.add(ModItems.BREADIUM_INGOT);
+                        entries.add(ModItems.BREADIUM_STAR_FRAGMENT);
+                        entries.add(ModItems.BREADIUM_STAR);
                         entries.add(ModBlocks.RAW_BREADIUM_BLOCK);
                         entries.add(ModBlocks.BREADIUM_BLOCK);
                         entries.add(ModBlocks.BREADIUM_ORE);
                         entries.add(ModBlocks.BREADIUM_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.BREADIUM_STAR_CORE);
+                        entries.add(ModBlocks.BREADIUM_STAR_EXTRACTOR);
                     }).build());
 
     public static void initialize() {
