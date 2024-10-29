@@ -3,8 +3,15 @@
 
   "item.breadium.raw_breadium": "Raw Breadium",
   "item.breadium.breadium_ingot": "Breadium Ingot",
+  "item.breadium.breadium_star": "Breadium Star",
+  "item.breadium.breadium_star_fragment": "Breadium Star Fragment",
+
   "block.breadium.raw_breadium_block": "Raw Breadium Block",
   "block.breadium.breadium_block": "Breadium Block",
   "block.breadium.breadium_ore": "Breadium Ore",
-  "block.breadium.breadium_deepslate_ore": "Breadium Deepslate Ore"
+  "block.breadium.breadium_deepslate_ore": "Breadium Deepslate Ore",
+  "block.breadium.breadium_star_core": "Breadium Star Core",
+  "block.breadium.breadium_star_extractor": "Breadium Star Extractor",
+
+  "tooltip.breadium.breadium_star_extractor": "This block extracts Breadium Star Fragments from a Breadium Star Core block."
 }
