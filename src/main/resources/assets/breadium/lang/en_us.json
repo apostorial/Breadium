@@ -1,0 +1,10 @@
+{
+  "itemgroup.breadium.breadium_group": "Breadium",
+
+  "item.breadium.raw_breadium": "Raw Breadium",
+  "item.breadium.breadium_ingot": "Breadium Ingot",
+  "block.breadium.raw_breadium_block": "Raw Breadium Block",
+  "block.breadium.breadium_block": "Breadium Block",
+  "block.breadium.breadium_ore": "Breadium Ore",
+  "block.breadium.breadium_deepslate_ore": "Breadium Deepslate Ore"
+}

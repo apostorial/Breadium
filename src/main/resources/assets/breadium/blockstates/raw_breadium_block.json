@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "breadium:block/raw_breadium_block"
+    }
+  }
+}
