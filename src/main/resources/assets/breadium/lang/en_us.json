@@ -6,6 +6,12 @@
   "item.breadium.breadium_star": "Breadium Star",
   "item.breadium.breadium_star_fragment": "Breadium Star Fragment",
 
+  "item.breadium.breadium_sword": "Breadium Sword",
+  "item.breadium.breadium_pickaxe": "Breadium Pickaxe",
+  "item.breadium.breadium_shovel": "Breadium Shovel",
+  "item.breadium.breadium_axe": "Breadium Axe",
+  "item.breadium.breadium_hoe": "Breadium Hoe",
+
   "block.breadium.raw_breadium_block": "Raw Breadium Block",
   "block.breadium.breadium_block": "Breadium Block",
   "block.breadium.breadium_ore": "Breadium Ore",
@@ -13,5 +19,6 @@
   "block.breadium.breadium_star_core": "Breadium Star Core",
   "block.breadium.breadium_star_extractor": "Breadium Star Extractor",
 
-  "tooltip.breadium.breadium_star_extractor": "This block extracts Breadium Star Fragments from a Breadium Star Core block."
+  "tooltip.breadium.breadium_star_extractor": "This block extracts Breadium Star Fragments from a Breadium Star Core block.",
+  "tooltip.breadium.breadium_star": "Non-consumable, infinite fuel source."
 }
