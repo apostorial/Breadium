@@ -1,6 +1,7 @@
 package com.apostorial.datagen;
 
 import com.apostorial.block.ModBlocks;
+import com.apostorial.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -28,5 +29,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BREADIUM_ORE)
                 .add(ModBlocks.BREADIUM_DEEPSLATE_ORE)
                 .add(ModBlocks.BREADIUM_STAR_EXTRACTOR);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BREADIUM_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
     }
 }
