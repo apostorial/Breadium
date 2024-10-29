@@ -1,6 +1,6 @@
-package com.example.item;
+package com.apostorial.item;
 
-import com.example.Breadium;
+import com.apostorial.Breadium;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

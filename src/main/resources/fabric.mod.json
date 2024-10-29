@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.Breadium"
+			"com.apostorial.Breadium"
 		],
 		"fabric-datagen": [
-			"com.example.BreadiumDataGenerator"
+			"com.apostorial.BreadiumDataGenerator"
 		]
 	},
 	"mixins": [

@@ -1,7 +1,7 @@
-package com.example.item;
+package com.apostorial.item;
 
-import com.example.Breadium;
-import com.example.block.ModBlocks;
+import com.apostorial.Breadium;
+import com.apostorial.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;

@@ -1,7 +1,7 @@
-package com.example.block;
+package com.apostorial.block;
 
-import com.example.Breadium;
-import com.example.block.custom.BreadiumStarExtractorBlock;
+import com.apostorial.Breadium;
+import com.apostorial.block.custom.BreadiumStarExtractorBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
