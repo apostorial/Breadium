@@ -20,5 +20,11 @@
   "block.breadium.breadium_star_extractor": "Breadium Star Extractor",
 
   "tooltip.breadium.breadium_star_extractor": "This block extracts Breadium Star Fragments from a Breadium Star Core block.",
-  "tooltip.breadium.breadium_star": "Non-consumable, infinite fuel source."
+  "tooltip.breadium.breadium_star": "Non-consumable, infinite fuel source.",
+
+  "tooltip.breadium.breadium_sword": "§a§lHealing Crust§r - Heals the user upon hitting an enemy.",
+  "tooltip.breadium.breadium_pickaxe": "§a§lOven's Embrace§r - Automatically smelts mined ores.",
+  "tooltip.breadium.breadium_shovel": "§a§lDiamond Dough§r - Diamonds have a small chance to drop when digging.",
+  "tooltip.breadium.breadium_axe": "§a§lForest Whisper§r - This axe can grow saplings into trees.",
+  "tooltip.breadium.breadium_hoe": "Non-consumable, infinite fuel source."
 }
