@@ -30,8 +30,10 @@ public class BreadiumAxeItem extends AxeItem {
                 ((SaplingBlock) block).grow((ServerWorld) world, world.random, pos, state);
                 world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Emitter.of(context.getPlayer(), state));
                 ((ServerWorld) world).spawnParticles(ParticleTypes.HAPPY_VILLAGER,
-                        pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
-                        10, 0.3, 0.3, 0.3, 0.1);
+                        pos.getX() + 0.5,
+                        pos.getY() + 0.5,
+                        pos.getZ() + 0.5,
+                        10, 0.5, 0.5, 0.5, 0.1);
             }
             return ActionResult.SUCCESS;
         }

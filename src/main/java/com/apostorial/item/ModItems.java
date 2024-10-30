@@ -67,7 +67,13 @@ public class ModItems {
     public static final Item BREADIUM_SHOVEL = register(
             "breadium_shovel",
             new BreadiumShovelItem(ModToolMaterials.BREADIUM, new Item.Settings()
-                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.BREADIUM, 2.0f, -3.0f))));
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.BREADIUM, 2.0f, -3.0f))) {
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.breadium.breadium_shovel"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
 
     public static final Item BREADIUM_AXE = register(
             "breadium_axe",
@@ -83,7 +89,13 @@ public class ModItems {
     public static final Item BREADIUM_HOE = register(
             "breadium_hoe",
             new BreadiumHoeItem(ModToolMaterials.BREADIUM, new Item.Settings()
-                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.BREADIUM, -4.5f, 0.0f))));
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.BREADIUM, -4.5f, 0.0f))) {
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.breadium.breadium_hoe"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
 
     public static Item register(String id, Item item) {
         Identifier itemID = Identifier.of(Breadium.MOD_ID, id);
