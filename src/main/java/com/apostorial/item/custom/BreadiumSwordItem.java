@@ -1,6 +1,7 @@
 package com.apostorial.item.custom;
 
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.HungerManager;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
@@ -17,9 +18,11 @@ public class BreadiumSwordItem extends SwordItem {
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (attacker instanceof PlayerEntity player) {
             World world = player.getWorld();
-
-            if (!world.isClient) {
-                player.heal(1.0F);
+            HungerManager manager = player.getHungerManager();
+            if (!world.isClient && manager.isNotFull()) {
+                manager.add(1,0.5f);
+            } else {
+                player.heal(1);
             }
         }
         return super.postHit(stack, target, attacker);
