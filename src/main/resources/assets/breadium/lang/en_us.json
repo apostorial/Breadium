@@ -22,9 +22,9 @@
   "tooltip.breadium.breadium_star_extractor": "This block extracts Breadium Star Fragments from a Breadium Star Core block.",
   "tooltip.breadium.breadium_star": "Non-consumable, infinite fuel source.",
 
-  "tooltip.breadium.breadium_sword": "§a§lHealing Crust§r - Heals the user upon hitting an enemy.",
-  "tooltip.breadium.breadium_pickaxe": "§a§lBaker's Fortune§r - Drops XP when mining blocks.",
-  "tooltip.breadium.breadium_shovel": "§a§lDiamond Dough§r - Diamonds have a small chance to drop when digging.",
-  "tooltip.breadium.breadium_axe": "§a§lForest Whisper§r - Applies bone meal effect to saplings.",
-  "tooltip.breadium.breadium_hoe": "§a§lHarvest Feast§r - Replants crops after harvesting them."
+  "tooltip.breadium.breadium_sword": "§e✦ §6Crust Heal",
+  "tooltip.breadium.breadium_pickaxe": "§e✦ §6Baker's Fortune",
+  "tooltip.breadium.breadium_shovel": "§e✦ §6Diamond Dough",
+  "tooltip.breadium.breadium_axe": "§e✦ §6Forest Whisper",
+  "tooltip.breadium.breadium_hoe": "§e✦ §6Harvest Feast"
 }
