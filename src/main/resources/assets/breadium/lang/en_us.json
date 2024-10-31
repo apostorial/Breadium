@@ -5,12 +5,18 @@
   "item.breadium.breadium_ingot": "Breadium Ingot",
   "item.breadium.breadium_star": "Breadium Star",
   "item.breadium.breadium_star_fragment": "Breadium Star Fragment",
+  "item.breadium.breadium_upgrade_smithing_template": "Breadium Template",
 
   "item.breadium.breadium_sword": "Breadium Sword",
   "item.breadium.breadium_pickaxe": "Breadium Pickaxe",
   "item.breadium.breadium_shovel": "Breadium Shovel",
   "item.breadium.breadium_axe": "Breadium Axe",
   "item.breadium.breadium_hoe": "Breadium Hoe",
+
+  "item.breadium.breadium_helmet": "Breadium Helmet",
+  "item.breadium.breadium_chestplate": "Breadium Chestplate",
+  "item.breadium.breadium_leggings": "Breadium Leggings",
+  "item.breadium.breadium_boots": "Breadium Boots",
 
   "block.breadium.raw_breadium_block": "Raw Breadium Block",
   "block.breadium.breadium_block": "Breadium Block",
