@@ -6,10 +6,13 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -39,49 +42,104 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.BREADIUM_STAR_FRAGMENT), conditionsFromItem(ModItems.BREADIUM_STAR_FRAGMENT))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.BREADIUM_SWORD)
-                .pattern("B")
-                .pattern("B")
-                .pattern("S")
-                .input('B', ModItems.BREADIUM_INGOT)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.BREADIUM_INGOT), conditionsFromItem(ModItems.BREADIUM_INGOT))
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE, 2)
+                .pattern("DUD")
+                .pattern("DBD")
+                .pattern("DDD")
+                .input('U', ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE)
+                .input('B', Items.BREAD)
+                .input('D', Items.DIAMOND)
+                .criterion(hasItem(ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE))
                 .offerTo(exporter);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BREADIUM_PICKAXE)
-                .pattern("BBB")
-                .pattern(" S ")
-                .pattern(" S ")
-                .input('B', ModItems.BREADIUM_INGOT)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.BREADIUM_INGOT), conditionsFromItem(ModItems.BREADIUM_INGOT))
-                .offerTo(exporter);
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_SWORD),
+                        Ingredient.ofItems(ModItems.BREADIUM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.BREADIUM_SWORD)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT),
+                        conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_SWORD) + "_smithing"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BREADIUM_SHOVEL)
-                .pattern("B")
-                .pattern("S")
-                .pattern("S")
-                .input('B', ModItems.BREADIUM_INGOT)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.BREADIUM_INGOT), conditionsFromItem(ModItems.BREADIUM_INGOT))
-                .offerTo(exporter);
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_PICKAXE),
+                        Ingredient.ofItems(ModItems.BREADIUM_INGOT),
+                        RecipeCategory.TOOLS,
+                        ModItems.BREADIUM_PICKAXE)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT),
+                        conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_PICKAXE) + "_smithing"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BREADIUM_AXE)
-                .pattern("BB")
-                .pattern("BS")
-                .pattern(" S")
-                .input('B', ModItems.BREADIUM_INGOT)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.BREADIUM_INGOT), conditionsFromItem(ModItems.BREADIUM_INGOT))
-                .offerTo(exporter);
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_SHOVEL),
+                        Ingredient.ofItems(ModItems.BREADIUM_INGOT),
+                        RecipeCategory.TOOLS,
+                        ModItems.BREADIUM_SHOVEL)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT),
+                        conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_SHOVEL) + "_smithing"));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.BREADIUM_HOE)
-                .pattern("BB")
-                .pattern(" S")
-                .pattern(" S")
-                .input('B', ModItems.BREADIUM_INGOT)
-                .input('S', Items.STICK)
-                .criterion(hasItem(ModItems.BREADIUM_INGOT), conditionsFromItem(ModItems.BREADIUM_INGOT))
-                .offerTo(exporter);
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_AXE),
+                        Ingredient.ofItems(ModItems.BREADIUM_INGOT),
+                        RecipeCategory.TOOLS,
+                        ModItems.BREADIUM_AXE)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT),
+                        conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_AXE) + "_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_HOE),
+                        Ingredient.ofItems(ModItems.BREADIUM_INGOT),
+                        RecipeCategory.TOOLS,
+                        ModItems.BREADIUM_HOE)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT),
+                        conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_HOE) + "_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_HELMET),
+                        Ingredient.ofItems(ModItems.BREADIUM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.BREADIUM_HELMET)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT),
+                        conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_HELMET) + "_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_CHESTPLATE),
+                        Ingredient.ofItems(ModItems.BREADIUM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.BREADIUM_CHESTPLATE)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT),
+                        conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_CHESTPLATE) + "_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_LEGGINGS),
+                        Ingredient.ofItems(ModItems.BREADIUM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.BREADIUM_LEGGINGS)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT),
+                        conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_LEGGINGS) + "_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(
+                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(Items.NETHERITE_BOOTS),
+                        Ingredient.ofItems(ModItems.BREADIUM_INGOT),
+                        RecipeCategory.COMBAT,
+                        ModItems.BREADIUM_BOOTS)
+                .criterion(hasItem(ModItems.BREADIUM_INGOT),
+                        conditionsFromItem(ModItems.BREADIUM_INGOT))
+                .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_BOOTS) + "_smithing"));
     }
 }
