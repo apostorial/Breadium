@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_breadium_upgrade_smithing_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": "breadium:breadium_upgrade_smithing_template"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "breadium:breadium_upgrade_smithing_template"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_breadium_upgrade_smithing_template"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "breadium:breadium_upgrade_smithing_template"
+    ]
+  }
+}

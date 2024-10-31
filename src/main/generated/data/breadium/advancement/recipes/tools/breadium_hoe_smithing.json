@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "breadium:breadium_sword"
+        "recipe": "minecraft:breadium_hoe_smithing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "breadium:breadium_sword"
+      "minecraft:breadium_hoe_smithing"
     ]
   }
 }

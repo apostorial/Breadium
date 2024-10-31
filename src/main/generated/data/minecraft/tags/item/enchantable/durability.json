@@ -4,6 +4,10 @@
     "breadium:breadium_pickaxe",
     "breadium:breadium_shovel",
     "breadium:breadium_axe",
-    "breadium:breadium_hoe"
+    "breadium:breadium_hoe",
+    "breadium:breadium_helmet",
+    "breadium:breadium_chestplate",
+    "breadium:breadium_leggings",
+    "breadium:breadium_boots"
   ]
 }
