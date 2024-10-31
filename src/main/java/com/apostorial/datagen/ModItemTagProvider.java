@@ -61,6 +61,47 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.BREADIUM_PICKAXE)
                 .add(ModItems.BREADIUM_SHOVEL)
                 .add(ModItems.BREADIUM_AXE)
-                .add(ModItems.BREADIUM_HOE);
+                .add(ModItems.BREADIUM_HOE)
+
+                .add(ModItems.BREADIUM_HELMET)
+                .add(ModItems.BREADIUM_CHESTPLATE)
+                .add(ModItems.BREADIUM_LEGGINGS)
+                .add(ModItems.BREADIUM_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
+                .add(ModItems.BREADIUM_HELMET);
+
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
+                .add(ModItems.BREADIUM_CHESTPLATE);
+
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
+                .add(ModItems.BREADIUM_LEGGINGS);
+
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
+                .add(ModItems.BREADIUM_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.BREADIUM_HELMET)
+                .add(ModItems.BREADIUM_CHESTPLATE)
+                .add(ModItems.BREADIUM_LEGGINGS)
+                .add(ModItems.BREADIUM_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.ARMOR_ENCHANTABLE)
+                .add(ModItems.BREADIUM_HELMET)
+                .add(ModItems.BREADIUM_CHESTPLATE)
+                .add(ModItems.BREADIUM_LEGGINGS)
+                .add(ModItems.BREADIUM_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE)
+                .add(ModItems.BREADIUM_HELMET);
+
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR_ENCHANTABLE)
+                .add(ModItems.BREADIUM_CHESTPLATE);
+
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR_ENCHANTABLE)
+                .add(ModItems.BREADIUM_LEGGINGS);
+
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR_ENCHANTABLE)
+                .add(ModItems.BREADIUM_BOOTS);
     }
 }
