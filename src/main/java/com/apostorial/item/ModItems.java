@@ -42,9 +42,16 @@ public class ModItems {
                 }
             });
 
+    public static final Item BREADIUM_UPGRADE_SMITHING_TEMPLATE = register(
+            "breadium_upgrade_smithing_template",
+            new Item(new Item.Settings()
+                    .fireproof()
+                    .rarity(Rarity.EPIC)));
+
     public static final Item BREADIUM_SWORD = register(
             "breadium_sword",
             new BreadiumSwordItem(ModToolMaterials.BREADIUM, new Item.Settings()
+                    .fireproof()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.BREADIUM, 4, -2.4f))) {
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -56,6 +63,7 @@ public class ModItems {
     public static final Item BREADIUM_PICKAXE = register(
             "breadium_pickaxe",
             new BreadiumPickaxeItem(ModToolMaterials.BREADIUM, new Item.Settings()
+                    .fireproof()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.BREADIUM, 1.5f, -2.8f))) {
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -67,6 +75,7 @@ public class ModItems {
     public static final Item BREADIUM_SHOVEL = register(
             "breadium_shovel",
             new BreadiumShovelItem(ModToolMaterials.BREADIUM, new Item.Settings()
+                    .fireproof()
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.BREADIUM, 2.0f, -3.0f))) {
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -78,6 +87,7 @@ public class ModItems {
     public static final Item BREADIUM_AXE = register(
             "breadium_axe",
             new BreadiumAxeItem(ModToolMaterials.BREADIUM, new Item.Settings()
+                    .fireproof()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.BREADIUM, 6, -3.0f))) {
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -89,6 +99,7 @@ public class ModItems {
     public static final Item BREADIUM_HOE = register(
             "breadium_hoe",
             new BreadiumHoeItem(ModToolMaterials.BREADIUM, new Item.Settings()
+                    .fireproof()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.BREADIUM, -4.5f, 0.0f))) {
                 @Override
                 public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -96,6 +107,30 @@ public class ModItems {
                     super.appendTooltip(stack, context, tooltip, type);
                 }
             });
+
+    public static final Item BREADIUM_HELMET = register(
+            "breadium_helmet",
+            new ArmorItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .fireproof()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40))));
+
+    public static final Item BREADIUM_CHESTPLATE = register(
+            "breadium_chestplate",
+            new ArmorItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .fireproof()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40))));
+
+    public static final Item BREADIUM_LEGGINGS = register(
+            "breadium_leggings",
+            new ArmorItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .fireproof()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40))));
+
+    public static final Item BREADIUM_BOOTS = register(
+            "breadium_boots",
+            new ArmorItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .fireproof()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
 
     public static Item register(String id, Item item) {
         Identifier itemID = Identifier.of(Breadium.MOD_ID, id);
