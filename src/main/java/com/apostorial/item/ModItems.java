@@ -110,27 +110,51 @@ public class ModItems {
 
     public static final Item BREADIUM_HELMET = register(
             "breadium_helmet",
-            new ArmorItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+            new BreadiumHelmetItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
                     .fireproof()
-                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40))));
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40))) {
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.breadium.breadium_helmet"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
 
     public static final Item BREADIUM_CHESTPLATE = register(
             "breadium_chestplate",
-            new ArmorItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+            new BreadiumChestplateItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
                     .fireproof()
-                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40))));
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40))) {
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.breadium.breadium_chestplate"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
 
     public static final Item BREADIUM_LEGGINGS = register(
             "breadium_leggings",
             new ArmorItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
                     .fireproof()
-                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40))));
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40))) {
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.breadium.breadium_leggings"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
 
     public static final Item BREADIUM_BOOTS = register(
             "breadium_boots",
             new ArmorItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .fireproof()
-                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))) {
+                @Override
+                public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+                    tooltip.add(Text.translatable("tooltip.breadium.breadium_boots"));
+                    super.appendTooltip(stack, context, tooltip, type);
+                }
+            });
 
     public static Item register(String id, Item item) {
         Identifier itemID = Identifier.of(Breadium.MOD_ID, id);

@@ -32,5 +32,10 @@
   "tooltip.breadium.breadium_pickaxe": "§e✦ §6Baker's Fortune",
   "tooltip.breadium.breadium_shovel": "§e✦ §6Diamond Dough",
   "tooltip.breadium.breadium_axe": "§e✦ §6Forest Whisper",
-  "tooltip.breadium.breadium_hoe": "§e✦ §6Harvest Feast"
+  "tooltip.breadium.breadium_hoe": "§e✦ §6Harvest Feast",
+
+  "tooltip.breadium.breadium_helmet": "§e✦ §6Gluten Vision",
+  "tooltip.breadium.breadium_chestplate": "§e✦ §6Doughy Blessing",
+  "tooltip.breadium.breadium_leggings": "§e✦ §6Toasty Warmth",
+  "tooltip.breadium.breadium_boots": "§e✦ §Yeasty Step"
 }
