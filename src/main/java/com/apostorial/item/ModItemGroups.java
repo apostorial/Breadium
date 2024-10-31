@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BREADIUM_INGOT);
                         entries.add(ModItems.BREADIUM_STAR_FRAGMENT);
                         entries.add(ModItems.BREADIUM_STAR);
+                        entries.add(ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE);
 
                         entries.add(ModBlocks.RAW_BREADIUM_BLOCK);
                         entries.add(ModBlocks.BREADIUM_BLOCK);
@@ -33,6 +34,11 @@ public class ModItemGroups {
                         entries.add(ModItems.BREADIUM_SHOVEL);
                         entries.add(ModItems.BREADIUM_AXE);
                         entries.add(ModItems.BREADIUM_HOE);
+
+                        entries.add(ModItems.BREADIUM_HELMET);
+                        entries.add(ModItems.BREADIUM_CHESTPLATE);
+                        entries.add(ModItems.BREADIUM_LEGGINGS);
+                        entries.add(ModItems.BREADIUM_BOOTS);
                     }).build());
 
     public static void initialize() {
