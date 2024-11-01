@@ -134,7 +134,7 @@ public class ModItems {
 
     public static final Item BREADIUM_LEGGINGS = register(
             "breadium_leggings",
-            new ArmorItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+            new BreadiumLeggingsItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
                     .fireproof()
                     .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40))) {
                 @Override
@@ -146,7 +146,7 @@ public class ModItems {
 
     public static final Item BREADIUM_BOOTS = register(
             "breadium_boots",
-            new ArmorItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+            new BreadiumBootsItem(ModArmorMaterials.BREADIUM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .fireproof()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))) {
                 @Override
