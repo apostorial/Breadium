@@ -53,7 +53,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
         SmithingTransformRecipeJsonBuilder.create(
-                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE),
                         Ingredient.ofItems(Items.NETHERITE_SWORD),
                         Ingredient.ofItems(ModItems.BREADIUM_INGOT),
                         RecipeCategory.COMBAT,
@@ -63,7 +63,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_SWORD) + "_smithing"));
 
         SmithingTransformRecipeJsonBuilder.create(
-                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE),
                         Ingredient.ofItems(Items.NETHERITE_PICKAXE),
                         Ingredient.ofItems(ModItems.BREADIUM_INGOT),
                         RecipeCategory.TOOLS,
@@ -73,7 +73,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_PICKAXE) + "_smithing"));
 
         SmithingTransformRecipeJsonBuilder.create(
-                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE),
                         Ingredient.ofItems(Items.NETHERITE_SHOVEL),
                         Ingredient.ofItems(ModItems.BREADIUM_INGOT),
                         RecipeCategory.TOOLS,
@@ -83,7 +83,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_SHOVEL) + "_smithing"));
 
         SmithingTransformRecipeJsonBuilder.create(
-                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE),
                         Ingredient.ofItems(Items.NETHERITE_AXE),
                         Ingredient.ofItems(ModItems.BREADIUM_INGOT),
                         RecipeCategory.TOOLS,
@@ -93,7 +93,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_AXE) + "_smithing"));
 
         SmithingTransformRecipeJsonBuilder.create(
-                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE),
                         Ingredient.ofItems(Items.NETHERITE_HOE),
                         Ingredient.ofItems(ModItems.BREADIUM_INGOT),
                         RecipeCategory.TOOLS,
@@ -103,7 +103,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_HOE) + "_smithing"));
 
         SmithingTransformRecipeJsonBuilder.create(
-                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE),
                         Ingredient.ofItems(Items.NETHERITE_HELMET),
                         Ingredient.ofItems(ModItems.BREADIUM_INGOT),
                         RecipeCategory.COMBAT,
@@ -113,7 +113,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_HELMET) + "_smithing"));
 
         SmithingTransformRecipeJsonBuilder.create(
-                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE),
                         Ingredient.ofItems(Items.NETHERITE_CHESTPLATE),
                         Ingredient.ofItems(ModItems.BREADIUM_INGOT),
                         RecipeCategory.COMBAT,
@@ -123,7 +123,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_CHESTPLATE) + "_smithing"));
 
         SmithingTransformRecipeJsonBuilder.create(
-                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE),
                         Ingredient.ofItems(Items.NETHERITE_LEGGINGS),
                         Ingredient.ofItems(ModItems.BREADIUM_INGOT),
                         RecipeCategory.COMBAT,
@@ -133,7 +133,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, Identifier.of(getRecipeName(ModItems.BREADIUM_LEGGINGS) + "_smithing"));
 
         SmithingTransformRecipeJsonBuilder.create(
-                        Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
+                        Ingredient.ofItems(ModItems.BREADIUM_UPGRADE_SMITHING_TEMPLATE),
                         Ingredient.ofItems(Items.NETHERITE_BOOTS),
                         Ingredient.ofItems(ModItems.BREADIUM_INGOT),
                         RecipeCategory.COMBAT,

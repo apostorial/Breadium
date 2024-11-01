@@ -11,6 +11,6 @@
     "id": "breadium:breadium_helmet"
   },
   "template": {
-    "item": "minecraft:netherite_upgrade_smithing_template"
+    "item": "breadium:breadium_upgrade_smithing_template"
   }
 }
