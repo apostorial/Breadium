@@ -20,15 +20,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.BREADIUM_BLOCK)
                 .add(ModBlocks.RAW_BREADIUM_BLOCK)
                 .add(ModBlocks.BREADIUM_ORE)
-                .add(ModBlocks.BREADIUM_DEEPSLATE_ORE)
-                .add(ModBlocks.BREADIUM_STAR_EXTRACTOR);
+                .add(ModBlocks.BREADIUM_DEEPSLATE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.BREADIUM_BLOCK)
                 .add(ModBlocks.RAW_BREADIUM_BLOCK)
                 .add(ModBlocks.BREADIUM_ORE)
-                .add(ModBlocks.BREADIUM_DEEPSLATE_ORE)
-                .add(ModBlocks.BREADIUM_STAR_EXTRACTOR);
+                .add(ModBlocks.BREADIUM_DEEPSLATE_ORE);
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_BREADIUM_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);

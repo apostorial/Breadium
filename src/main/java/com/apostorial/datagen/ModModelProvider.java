@@ -21,7 +21,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BREADIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BREADIUM_DEEPSLATE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BREADIUM_STAR_CORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BREADIUM_STAR_EXTRACTOR);
     }
 
     @Override

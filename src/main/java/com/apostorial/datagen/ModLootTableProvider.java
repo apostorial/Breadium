@@ -16,7 +16,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.BREADIUM_BLOCK);
-        addDrop(ModBlocks.BREADIUM_STAR_EXTRACTOR);
         addDrop(ModBlocks.RAW_BREADIUM_BLOCK);
 
         addDrop(ModBlocks.BREADIUM_ORE, oreDrops(ModBlocks.BREADIUM_ORE, ModItems.RAW_BREADIUM));

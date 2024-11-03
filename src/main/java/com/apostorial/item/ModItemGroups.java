@@ -27,7 +27,6 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BREADIUM_ORE);
                         entries.add(ModBlocks.BREADIUM_DEEPSLATE_ORE);
                         entries.add(ModBlocks.BREADIUM_STAR_CORE);
-                        entries.add(ModBlocks.BREADIUM_STAR_EXTRACTOR);
 
                         entries.add(ModItems.BREADIUM_SWORD);
                         entries.add(ModItems.BREADIUM_PICKAXE);

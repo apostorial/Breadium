@@ -1,7 +1,6 @@
 package com.apostorial.block;
 
 import com.apostorial.Breadium;
-import com.apostorial.block.custom.BreadiumStarExtractorBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -40,12 +39,6 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     .strength(-1.0F, 3600000.0F)
                     .dropsNothing()));
-
-    public static final Block BREADIUM_STAR_EXTRACTOR = registerBlock(
-            "breadium_star_extractor",
-            new BreadiumStarExtractorBlock(AbstractBlock.Settings.create()
-                    .strength(20.0F, 1200.0F)
-                    .requiresTool()));
 
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
