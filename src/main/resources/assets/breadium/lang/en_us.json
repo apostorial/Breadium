@@ -23,19 +23,11 @@
   "block.breadium.breadium_ore": "Breadium Ore",
   "block.breadium.breadium_deepslate_ore": "Breadium Deepslate Ore",
   "block.breadium.breadium_star_core": "Breadium Star Core",
-  "block.breadium.breadium_star_extractor": "Breadium Star Extractor",
-
-  "tooltip.breadium.breadium_star_extractor": "This block extracts Breadium Star Fragments from a Breadium Star Core block.",
   "tooltip.breadium.breadium_star": "Non-consumable, infinite fuel source.",
 
   "tooltip.breadium.breadium_sword": "§e✦ §6Crust Heal",
   "tooltip.breadium.breadium_pickaxe": "§e✦ §6Baker's Fortune",
   "tooltip.breadium.breadium_shovel": "§e✦ §6Diamond Dough",
   "tooltip.breadium.breadium_axe": "§e✦ §6Forest Whisper",
-  "tooltip.breadium.breadium_hoe": "§e✦ §6Harvest Feast",
-
-  "tooltip.breadium.breadium_helmet": "§e✦ §6Gluten Vision",
-  "tooltip.breadium.breadium_chestplate": "§e✦ §6Doughy Blessing",
-  "tooltip.breadium.breadium_leggings": "§e✦ §6Toasty Warmth",
-  "tooltip.breadium.breadium_boots": "§e✦ §6Yeasty Step"
+  "tooltip.breadium.breadium_hoe": "§e✦ §6Harvest Feast"
 }
