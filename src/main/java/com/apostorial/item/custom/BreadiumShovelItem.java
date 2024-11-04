@@ -14,7 +14,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public class BreadiumShovelItem extends ShovelItem {
-    private static final float DIAMOND_CHANCE = 0.05f;
+    private static final float DIAMOND_CHANCE = 0.03f;
 
     public BreadiumShovelItem(ToolMaterial material, Settings settings) {
         super(material, settings);
